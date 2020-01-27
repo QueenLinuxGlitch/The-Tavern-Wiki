@@ -1,0 +1,10 @@
+{
+  "name": "heroku-tavern-tiddlywiki",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "tiddlywiki . --server",
+    "postinstall": "npm install -g tiddlywiki"
+  }
+}

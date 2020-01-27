@@ -1,0 +1,24 @@
+created: 20200122021426586
+modified: 20200122022647717
+tags: dm info
+title: Wiki To-Do
+tmap.id: e83900e0-4d32-4b19-9aad-35937c8deff2
+type: text/vnd.tiddlywiki
+
+Tag notes with `task` to make a task, __also__ mark as `done` to add to Completed.
+
+! Outstanding tasks
+
+<$list filter="[!has[draft.of]tag[task]!tag[done]sort[created]]">
+
+<$checkbox tag="done"> <$link to={{!!title}}><$view field="title"/></$link></$checkbox>
+
+</$list>
+
+! Completed tasks
+
+<$list filter="[!has[draft.of]tag[task]tag[done]sort[created]]">
+
+<$checkbox tag="done"> ~~<$link to={{!!title}}><$view field="title"/></$link>~~</$checkbox>
+
+</$list>
