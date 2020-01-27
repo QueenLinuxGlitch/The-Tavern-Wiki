@@ -1,10 +1,12 @@
 {
-  "name": "heroku-tavern-tiddlywiki",
-  "version": "0.0.1",
-  "description": "",
+  "name": "The-Tavern-Wiki",
+  "version": "0.0.3",
+  "description": "A Wiki for The Tavern",
+  "dependencies": {
+    "tiddlywiki": "^5.1.21"
+  },
   "main": "",
   "scripts": {
-    "start": "tiddlywiki . --server",
-    "postinstall": "npm install -g tiddlywiki"
+    "start": "tiddlywiki . --listen host=0.0.0.0 port=$PORT 'readers=(anon)' 'writers=(authenticated)' username=$ADMIN password=$PASSWORD"
   }
 }

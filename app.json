@@ -1,0 +1,21 @@
+{
+    "name": "The-Tavern-Wiki",
+    "description": "Wiki for our Tabletop Guild based on TiddlyWiki",
+    "keywords": [
+      "tiddlywiki",
+      "wiki",
+      "tavern",
+      "discord"
+    ],
+    "repository": "https://github.com/QueenLinuxGlitch/The-Tavern-Wiki",
+    "env": {
+        "ADMIN": {
+          "description": "The username for your admin to login with",
+          "value": "queen"
+        },
+        "PASSWORD": {
+          "description": "Password for the admin account",
+          "value": "Th3-T@v3rn"
+        }
+    }
+}

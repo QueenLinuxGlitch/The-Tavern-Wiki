@@ -1,3 +1,4 @@
 .DS_Store
 .env
 tiddlers/.DS_Store
+node_modules
